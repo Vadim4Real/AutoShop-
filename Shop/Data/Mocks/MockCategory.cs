@@ -1,6 +1,6 @@
 ﻿
-using Shop.Pages.Models;
-using Shop.Pages.Models.Interfaces;
+using Shop.Data.Models;
+using Shop.Data.Interfaces;
 
 namespace Shop.Data.Mocks
 {

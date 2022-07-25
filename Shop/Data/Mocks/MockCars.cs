@@ -1,5 +1,6 @@
-﻿using Shop.Pages.Models;
-using Shop.Pages.Models.Interfaces;
+﻿
+using Shop.Data.Interfaces;
+using Shop.Data.Models;
 using System.Linq;
 
 namespace Shop.Data.Mocks

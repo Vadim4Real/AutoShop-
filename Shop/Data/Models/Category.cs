@@ -1,4 +1,4 @@
-﻿namespace Shop.Pages.Models
+﻿namespace Shop.Data.Models
 {
     public class Category
     {

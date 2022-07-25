@@ -1,4 +1,6 @@
-﻿namespace Shop.Pages.Models.Interfaces
+﻿using Shop.Data.Models;
+
+namespace Shop.Data.Interfaces
 {
     public interface IAllCars
     {

@@ -1,8 +1,15 @@
+using Shop.Data.Mocks;
+using Shop.Data.Interfaces;
+using Microsoft.AspNetCore.Builder;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddMvc();
+builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
+builder.Services.AddTransient<IAllCars,MockCars>();
+builder.Services.AddTransient<ICarsCategory, MockCategory>();
+
 
 var app = builder.Build();
 
@@ -21,7 +28,6 @@ app.UseStaticFiles();
 app.UseStaticFiles();
 app.UseMvcWithDefaultRoute();
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapRazorPages();
