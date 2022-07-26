@@ -40,6 +40,14 @@ app.UseMvcWithDefaultRoute();
 app.UseRouting();
 app.UseAuthorization();
 
+
+using (var scope = app.Services.CreateScope())
+{
+
+    AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+
+    DBObjects.Initial(content);
+}
 app.MapRazorPages();
 
 app.Run();
