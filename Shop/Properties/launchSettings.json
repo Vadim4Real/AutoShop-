@@ -1,6 +1,6 @@
-﻿{
+{
   "iisSettings": {
-    "windowsAuthentication": false,
+    "windowsAuthentication": true,
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:50460",
@@ -10,12 +10,12 @@
   "profiles": {
     "Shop": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7229;http://localhost:5229",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:7229;http://localhost:5229",
+      "dotnetRunMessages": true
     },
     "IIS Express": {
       "commandName": "IISExpress",
